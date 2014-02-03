@@ -1,4 +1,8 @@
 AssociationsDemo::Application.routes.draw do
+  resources :accounts
+
+  resources :suppliers
+
   resources :orders
 
   resources :customers
