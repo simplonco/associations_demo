@@ -1,0 +1,8 @@
+<h1><%= @customer.name %> a <%= pluralize(@orders.size, 'commande') %></h1>
+
+
+<% if @orders.count > 0 %>
+	<ul>
+		<%= render @orders %>
+	</ul>
+<%end%>
