@@ -1,4 +1,10 @@
 AssociationsDemo::Application.routes.draw do
+  resources :appointments
+
+  resources :patients
+
+  resources :physicians
+
   resources :accounts
 
   resources :suppliers
@@ -11,7 +17,7 @@ AssociationsDemo::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'static_page#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

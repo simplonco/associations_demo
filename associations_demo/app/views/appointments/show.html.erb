@@ -1,0 +1,1 @@
+<%= @appointment.id %> Docteur: <%= Physician.find(@appointment.physician_id).name %> pour le patient : <%= Patient.find(@appointment.patient_id).name %>

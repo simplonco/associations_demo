@@ -1,0 +1,8 @@
+<h1><%= @physician.name %> a <%= pluralize(@appointments.size, 'rendez-vous') %></h1>
+
+
+<% if @appointments.count > 0 %>
+	<ul>
+		<%= render @appointments %>
+	</ul>
+<%end%>
