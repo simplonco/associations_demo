@@ -1,4 +1,6 @@
 AssociationsDemo::Application.routes.draw do
+  resources :account_histories
+
   resources :appointments
 
   resources :patients

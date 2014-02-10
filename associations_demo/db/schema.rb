@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140203151409) do
+ActiveRecord::Schema.define(version: 20140210102841) do
+
+  create_table "account_histories", force: true do |t|
+    t.integer  "account_id"
+    t.integer  "credit_rating"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "accounts", force: true do |t|
     t.integer  "supplier_id"
