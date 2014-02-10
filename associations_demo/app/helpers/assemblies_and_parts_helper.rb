@@ -1,0 +1,2 @@
+module AssembliesAndPartsHelper
+end

@@ -1,4 +1,10 @@
 AssociationsDemo::Application.routes.draw do
+  resources :assemblies_and_parts
+
+  resources :parts
+
+  resources :assemblies
+
   resources :account_histories
 
   resources :appointments
