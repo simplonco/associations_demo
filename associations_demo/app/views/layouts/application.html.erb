@@ -1,14 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>AssociationsDemo</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= yield %>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-</body>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+  <div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">Associations in Ruby on Rails</h1>
+      </section>
+
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Toolbox</label></li>
+        <li><a href="#">A propos</a></li>
+        <li><label>Les types d'associations</label></li>
+        <li><a href="#">belongs_to</a></li>
+        <li><a href="#">has_one</a></li>
+        <li><a href="#">has_many</a></li>
+        <li><a href="#">has_many :through</a></li>
+        <li><a href="#">has_one :through</a></li>
+        <li><a href="#">has_and_belongs_to_many</a></li>
+        <li><label>Tips, Tricks, and Warnings</label></li>
+        <li><a href="#">controller le cahe</a></li>
+
+      </ul>
+    </aside>
+
+
+
+    <section class="main-section">
+     <%= yield %>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+    
+    <%= javascript_include_tag "application" %>
+  </body>
 </html>
