@@ -27,6 +27,7 @@ AssociationsDemo::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static_page#home'
 
+  get 'has_many' => 'static_page#has_many'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
