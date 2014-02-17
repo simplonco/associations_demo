@@ -1,0 +1,97 @@
+<div class="container hasStyle">
+
+    <!-- Header and Nav -->
+ 
+  <div class="row">
+    <div class="large-3 columns">
+      <h1>Has_many</h1>
+    </div>
+    <div class="large-9 columns">
+      <ul class="button-group right">
+        <li><a href="#" class="button">Objectif</a></li>
+        <li><a href="#" class="button">Exemple</a></li>
+        <li><a href="#" class="button">Code</a></li>
+        <li><%= link_to "In Rails", @in_rails_url, class:'button'%></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <!-- End Header and Nav -->
+ 
+ 
+<!-- First Band (Slider) -->
+ 
+  <div class="row">
+  	<ul class="example-orbit" data-orbit> 
+  		<li> <%= image_tag "exemple association.png", height:'200', width:'500' %> 
+  			<div class="orbit-caption"> 
+  				Principe de l'association has_many 
+  			</div> 
+  		</li> 
+  		<li> <%= image_tag "belongs_to.png", height:'200', width:'500' %>  
+  				<div class="orbit-caption"> 
+  					La representation de l'association. 
+  				</div> 
+  		</li> 
+  		<li> <%= image_tag "code_belons_to.png", height:'200', width:'500'  %> 
+  			<div class="orbit-caption"> Le code de l'association. 
+  			</div> 
+  		</li> 
+  	</ul>
+      
+	
+
+ 
+  <div class="row">
+    <div class="large-4 columns">
+      <%= image_tag "main.jpg", height:'200', width:'500' %>
+    </div>
+    <div class="large-8 columns">
+      <h4>Principe de l'association belongs_to</h4>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>L'association belongs_to décrit qu'un objet A appartient à un objet B. Par exemple, on dira que l'objet Doigt appartient à l'objet Main.
+          </p>
+          <p>
+            On pourrait alors écrire en ruby d = Doigt.first 
+          </p>
+          <p>
+            => #<Doigt id: 1, main_id: 1, doigt_nom: "pouce" >
+          </p>
+          <p>
+            d.main.name 
+          </p>
+          <p>
+            => "main gauche"
+          </p>
+
+        </div>
+        <div class="large-6 columns">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+  
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

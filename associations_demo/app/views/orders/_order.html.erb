@@ -1,3 +1,5 @@
 <li>
-	<strong>n° de commande:</strong> <%= order.id %>, <strong>date de commande :</strong> <%= order.order_date%>
-</li>
+	<%= link_to(order) do %>
+		<strong>n° de commande:</strong> <%= order.id %>, <strong>date de commande :</strong> <%= order.order_date%>
+	<% end %>
+</li>	 

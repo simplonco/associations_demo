@@ -28,6 +28,8 @@ AssociationsDemo::Application.routes.draw do
   root 'static_page#home'
 
   get 'has_many' => 'static_page#has_many'
+  get 'belongs_to' => 'static_page#belongs_to'
+  get 'visualisation' => 'static_page#visualisation'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

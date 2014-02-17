@@ -10,4 +10,10 @@ def self.customer_url
 
 	"/customers/#{n}" 	
 end
+
+def self.order_url
+	n = rand(Order.count)
+	"/orders/#{n}"
+end
+
 end
