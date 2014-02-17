@@ -1,14 +1,87 @@
 <div class="container hasStyle">
-<h1>L'association has_many</h1>
-<div class="row app-links">
-	<div class= "small-6 large-centered columns">
-		<%= image_tag "has_many2.png" %>
-	</div>
-	<div class= "small-6 large-centered columns">
-		<%= image_tag "has_many2.png" %>
-	</div>
-	<div class= "small-6 large-centered columns">
-		<%= image_tag "has_many2.png" %>
-	</div>
-</div>
-</div>
+
+    <!-- Header and Nav -->
+ 
+  <div class="row">
+    <div class="large-3 columns">
+      <h1>Has_many</h1>
+    </div>
+    <div class="large-9 columns">
+      <ul class="button-group right">
+        <li><a href="#" class="button">Objectif</a></li>
+        <li><a href="#" class="button">Exemple</a></li>
+        <li><a href="#" class="button">Code</a></li>
+        <li><a href="#" class="button">in Rails</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <!-- End Header and Nav -->
+ 
+ 
+<!-- First Band (Slider) -->
+ 
+  <div class="row">
+  	<ul class="example-orbit" data-orbit> 
+  		<li> <%= image_tag "exemple association.png", height:'200', width:'500' %> 
+  			<div class="orbit-caption"> 
+  				Principe de l'association has_many 
+  			</div> 
+  		</li> 
+  		<li> <%= image_tag "has_many2.png", height:'200', width:'500' %>  
+  				<div class="orbit-caption"> 
+  					La representation de l'association. 
+  				</div> 
+  		</li> 
+  		<li> <%= image_tag "code_has_many.png", height:'200', width:'500'  %> 
+  			<div class="orbit-caption"> Le code de l'association. 
+  			</div> 
+  		</li> 
+  	</ul>
+      
+	
+
+ 
+  <div class="row">
+    <div class="large-4 columns">
+      <%= image_tag "main.jpg", height:'200', width:'500' %>
+    </div>
+    <div class="large-8 columns">
+      <h4>Principe de l'association has_many</h4>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>L'association has_many décrit qu'un objet A est en mesure d'avoir plusieurs objet B. Par exemple, on dira que l'objet Main a plusieurs objets Doigts.
+          </p>
+          <p>
+            On pourrait alors écrire en ruby main.doigts(1) = "Pouce"
+          </p>
+        </div>
+        <div class="large-6 columns">
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+  
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
